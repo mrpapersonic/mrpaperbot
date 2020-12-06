@@ -115,21 +115,10 @@ async def pack(ctx):
 async def share(ctx):
 	await ctx.channel.send("http://bit.ly/MrPaperBot")
 
-#literally a fork bomb
-"""
-client.on("message", (message) => {
-  if (message.content.startsWith("a")) {
-    message.channel.send("aaaaaaaaaaaaa");
-  }
-});
-"""
-
 #wtf is this
-"""
 @client.command()
 async def spam(ctx):
 	await ctx.channel.send(".               hi")
-"""
 
 @client.command()
 async def masturbation(ctx):
@@ -140,14 +129,14 @@ async def nub(ctx):
 	await ctx.channel.send("i am a complete nub [yes its a joke]")
 
 #not possible in discord.py
+#nevermind
+async def on_message(message):
+    if "driver - the eye of truth" in message.content.lower():
+        await Bot.send_message(message.channel, 'yes')
+""" commented because fork bomb
+    if "a" in message.content.lower():
+        await Bot.send_message(message.channel, 'aaaaaaaaaaaaa')
 """
-client.on("message", (message) => {
-  if (message.content.startsWith("driver - the eye of truth")) {
-    message.channel.send("https://www.youtube.com/watch?v=6UosfX5u14g");
-  }
-});
-"""
-
 @client.command()
 async def soop(ctx):
 	await ctx.channel.send("http://decameron.org/wp-content/uploads/2013/05/SooP2.Logo1_.5.jpg")
