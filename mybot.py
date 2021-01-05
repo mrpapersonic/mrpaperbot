@@ -131,8 +131,9 @@ async def nub(ctx):
 #not possible in discord.py
 #nevermind
 async def on_message(message):
-    if "driver - the eye of truth" in message.content.lower():
-        await Bot.send_message(message.channel, 'yes')
+	await client.process_commands(message)
+	if "driver - the eye of truth" in message.content.lower():
+		await Bot.send_message(message.channel, 'yes')
 """ commented because fork bomb
     if "a" in message.content.lower():
         await Bot.send_message(message.channel, 'aaaaaaaaaaaaa')
